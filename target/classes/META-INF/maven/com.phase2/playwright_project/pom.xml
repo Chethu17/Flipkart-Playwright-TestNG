@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.phase2</groupId>
+  <artifactId>playwright_project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>playwright_project</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <allure.version>2.35.3</allure.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+		<dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-bom</artifactId>
+            <version>${allure.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+ <dependencies>    
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+   	  <version>7.12.0</version>
+      <scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>com.microsoft.playwright</groupId>
+	    <artifactId>playwright</artifactId>
+	    <version>1.62.0</version>
+	    <scope>compile</scope>
+	</dependency>  
+	
+	<dependency>
+    	<groupId>io.qameta.allure</groupId>
+    	<artifactId>allure-testng</artifactId>
+    	<scope>test</scope>
+	</dependency>
+ </dependencies>
+ 
+   <build>
+        <plugins>
+          <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.12.0</version>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.5.4</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>TestNg.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
+         </plugin>
+        </plugins>
+    </build>
+
+</project>
