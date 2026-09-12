@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="6" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-12T23:04:56 IST" name="Flipkart Suite" finished-at="2026-09-12T23:06:11 IST" duration-ms="75476">
+    <groups>
+    </groups>
+    <test started-at="2026-09-12T23:04:56 IST" name="Automation Tests" finished-at="2026-09-12T23:06:11 IST" duration-ms="75476">
+      <class name="tests.flipkartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:04:56 IST" name="setUp" finished-at="2026-09-12T23:05:12 IST" duration-ms="16707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="createPageObject()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:12 IST" name="createPageObject" finished-at="2026-09-12T23:05:13 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPageObject -->
+        <test-method signature="verifySearchProductTest()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:13 IST" name="verifySearchProductTest" finished-at="2026-09-12T23:05:19 IST" duration-ms="6159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchProductTest -->
+        <test-method signature="verifySearchWithSUggetsion()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:19 IST" name="verifySearchWithSUggetsion" finished-at="2026-09-12T23:05:21 IST" depends-on-methods="tests.flipkartTest.verifySearchProductTest" duration-ms="2017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithSUggetsion -->
+        <test-method signature="verifyFilterOptions()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:21 IST" name="verifyFilterOptions" finished-at="2026-09-12T23:05:24 IST" depends-on-methods="tests.flipkartTest.verifySearchWithSUggetsion" duration-ms="3507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterOptions -->
+        <test-method signature="verifyItemsLoadedAndList()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:24 IST" name="verifyItemsLoadedAndList" finished-at="2026-09-12T23:05:24 IST" depends-on-methods="tests.flipkartTest.verifyFilterOptions" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemsLoadedAndList -->
+        <test-method signature="verifyOpen2ndProduct()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:24 IST" name="verifyOpen2ndProduct" finished-at="2026-09-12T23:05:25 IST" depends-on-methods="tests.flipkartTest.verifyItemsLoadedAndList" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpen2ndProduct -->
+        <test-method signature="verifySelectSize()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:25 IST" name="verifySelectSize" finished-at="2026-09-12T23:05:55 IST" depends-on-methods="tests.flipkartTest.verifyOpen2ndProduct" duration-ms="30042" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByText("L", new Page.GetByTextOptions().setExact(true))
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByText("L", new Page.GetByTextOptions().setExact(true))
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
+at com.microsoft.playwright.Locator.click(Locator.java:2837)
+at pages.flipkartPage.selectSize(flipkartPage.java:53)
+at tests.flipkartTest.verifySelectSize(flipkartTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at _ProgressController.run (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:12135:32)
+    at DispatcherConnection.dispatch (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:18775:44)
+}
+Call log:
+-   - waiting for getByText("L", new Page.GetByTextOptions().setExact(true))
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySelectSize -->
+        <test-method signature="verifyHover()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:55 IST" name="verifyHover" finished-at="2026-09-12T23:05:55 IST" depends-on-methods="tests.flipkartTest.verifySelectSize" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method tests.flipkartTest.verifyHover() on instance tests.flipkartTest@42e99e4a depends on not successfully finished methods 
+[tests.flipkartTest.verifySelectSize() on instance tests.flipkartTest@42e99e4a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method tests.flipkartTest.verifyHover() on instance tests.flipkartTest@42e99e4a depends on not successfully finished methods 
+[tests.flipkartTest.verifySelectSize() on instance tests.flipkartTest@42e99e4a]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHover -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.flipkartTest@42e99e4a]" started-at="2026-09-12T23:05:55 IST" name="tearDown" finished-at="2026-09-12T23:05:56 IST" duration-ms="1428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.flipkartTest -->
+      <class name="tests.flightTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.flightTest@1a451d4d]" started-at="2026-09-12T23:05:56 IST" name="setUp" finished-at="2026-09-12T23:06:02 IST" duration-ms="5668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="flightSearchTest()[pri:0, instance:tests.flightTest@1a451d4d]" started-at="2026-09-12T23:06:02 IST" name="flightSearchTest" finished-at="2026-09-12T23:06:11 IST" duration-ms="8533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.flightTest@1a451d4d]" started-at="2026-09-12T23:06:11 IST" name="tearDown" finished-at="2026-09-12T23:06:11 IST" duration-ms="665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.flightTest -->
+    </test> <!-- Automation Tests -->
+  </suite> <!-- Flipkart Suite -->
+</testng-results>

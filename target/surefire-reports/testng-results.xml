@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-12T23:37:02 IST" name="Flipkart Suite" finished-at="2026-09-12T23:37:49 IST" duration-ms="46607">
+    <groups>
+    </groups>
+    <test started-at="2026-09-12T23:37:02 IST" name="Automation Tests" finished-at="2026-09-12T23:37:49 IST" duration-ms="46607">
+      <class name="tests.flipkartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:02 IST" name="setUp" finished-at="2026-09-12T23:37:21 IST" duration-ms="19224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="createPageObject()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:21 IST" name="createPageObject" finished-at="2026-09-12T23:37:21 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPageObject -->
+        <test-method signature="verifySearchProductTest()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:21 IST" name="verifySearchProductTest" finished-at="2026-09-12T23:37:26 IST" duration-ms="5052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchProductTest -->
+        <test-method signature="verifySearchWithSUggetsion()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:27 IST" name="verifySearchWithSUggetsion" finished-at="2026-09-12T23:37:29 IST" depends-on-methods="tests.flipkartTest.verifySearchProductTest" duration-ms="2545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithSUggetsion -->
+        <test-method signature="verifyFilterOptions()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:29 IST" name="verifyFilterOptions" finished-at="2026-09-12T23:37:32 IST" depends-on-methods="tests.flipkartTest.verifySearchWithSUggetsion" duration-ms="2821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFilterOptions -->
+        <test-method signature="verifyItemsLoadedAndList()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:32 IST" name="verifyItemsLoadedAndList" finished-at="2026-09-12T23:37:32 IST" depends-on-methods="tests.flipkartTest.verifyFilterOptions" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyItemsLoadedAndList -->
+        <test-method signature="verifyOpen2ndProduct()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:32 IST" name="verifyOpen2ndProduct" finished-at="2026-09-12T23:37:32 IST" depends-on-methods="tests.flipkartTest.verifyItemsLoadedAndList" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpen2ndProduct -->
+        <test-method signature="verifySelectSize()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:32 IST" name="verifySelectSize" finished-at="2026-09-12T23:37:35 IST" depends-on-methods="tests.flipkartTest.verifyOpen2ndProduct" duration-ms="2016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySelectSize -->
+        <test-method signature="verifyHover()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:35 IST" name="verifyHover" finished-at="2026-09-12T23:37:35 IST" depends-on-methods="tests.flipkartTest.verifySelectSize" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHover -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.flipkartTest@4c1909a3]" started-at="2026-09-12T23:37:35 IST" name="tearDown" finished-at="2026-09-12T23:37:36 IST" duration-ms="986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.flipkartTest -->
+      <class name="tests.flightTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.flightTest@59505b48]" started-at="2026-09-12T23:37:36 IST" name="setUp" finished-at="2026-09-12T23:37:40 IST" duration-ms="4126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="flightSearchTest()[pri:0, instance:tests.flightTest@59505b48]" started-at="2026-09-12T23:37:40 IST" name="flightSearchTest" finished-at="2026-09-12T23:37:48 IST" duration-ms="8073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightSearchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.flightTest@59505b48]" started-at="2026-09-12T23:37:48 IST" name="tearDown" finished-at="2026-09-12T23:37:49 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.flightTest -->
+    </test> <!-- Automation Tests -->
+  </suite> <!-- Flipkart Suite -->
+</testng-results>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Flipkart Suite]">
+  <test thread-count="5" name="Automation Tests(failed)">
+    <classes>
+      <class name="tests.flipkartTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="createPageObject"/>
+          <include name="verifyHover"/>
+          <include name="verifyOpen2ndProduct"/>
+          <include name="tearDown"/>
+          <include name="verifySelectSize"/>
+          <include name="verifySearchWithSUggetsion"/>
+          <include name="verifyItemsLoadedAndList"/>
+          <include name="verifyFilterOptions"/>
+          <include name="verifySearchProductTest"/>
+        </methods>
+      </class> <!-- tests.flipkartTest -->
+    </classes>
+  </test> <!-- Automation Tests(failed) -->
+</suite> <!-- Failed suite [Flipkart Suite] -->

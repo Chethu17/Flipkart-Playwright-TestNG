@@ -1,0 +1,8 @@
+<suite name="Flipkart Suite">
+    <test name="Automation Tests">
+        <classes>
+            <class name="tests.flipkartTest"/>
+            <class name="tests.flightTest"/> 
+        </classes>
+    </test>
+</suite>
