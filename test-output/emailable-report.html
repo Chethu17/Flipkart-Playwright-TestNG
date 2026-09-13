@@ -8,55 +8,13 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Flipkart Suite</th></tr>
-<tr><td><a href="#t0">Automation Tests</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">75,476</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,315</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Flipkart Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Automation Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.flipkartTest</td><td><a href="#m0">verifySelectSize</a></td><td rowspan="1">1789234525201</td><td rowspan="1">30042</td></tr><tr><th colspan="4">Automation Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.flipkartTest</td><td><a href="#m1">verifyHover</a></td><td rowspan="1">1789234555320</td><td rowspan="1">1</td></tr><tr><th colspan="4">Automation Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.flightTest</td><td><a href="#m2">flightSearchTest</a></td><td rowspan="1">1789234562482</td><td rowspan="1">8533</td></tr><tr class="passedodd"><td rowspan="5">tests.flipkartTest</td><td><a href="#m3">verifyFilterOptions</a></td><td rowspan="1">1789234521319</td><td rowspan="1">3507</td></tr><tr class="passedodd"><td><a href="#m4">verifyItemsLoadedAndList</a></td><td rowspan="1">1789234524835</td><td rowspan="1">27</td></tr><tr class="passedodd"><td><a href="#m5">verifyOpen2ndProduct</a></td><td rowspan="1">1789234524874</td><td rowspan="1">315</td></tr><tr class="passedodd"><td><a href="#m6">verifySearchProductTest</a></td><td rowspan="1">1789234513112</td><td rowspan="1">6159</td></tr><tr class="passedodd"><td><a href="#m7">verifySearchWithSUggetsion</a></td><td rowspan="1">1789234519296</td><td rowspan="1">2017</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.flightTest</td><td><a href="#m0">flightSearchTest</a></td><td rowspan="1">1789273612086</td><td rowspan="1">8934</td></tr><tr class="passedeven"><td><a href="#m1">framesTest</a></td><td rowspan="1">1789273621422</td><td rowspan="1">4233</td></tr><tr class="passedeven"><td><a href="#m2">popUpTest</a></td><td rowspan="1">1789273625667</td><td rowspan="1">6167</td></tr></tbody>
 </table>
-<h2>Automation Tests</h2><h3 id="m0">tests.flipkartTest#verifySelectSize</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:18775:44)
-}
-Call log:
--   - waiting for getByText(&quot;L&quot;, new Page.GetByTextOptions().setExact(true))
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:147)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:136)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:133)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:244)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:173)
-	at com.microsoft.playwright.Locator.click(Locator.java:2837)
-	at pages.flipkartPage.selectSize(flipkartPage.java:53)
-	at tests.flipkartTest.verifySelectSize(flipkartTest.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-    at _ProgressController.run (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:12135:32)
-    at DispatcherConnection.dispatch (C:\Users\HP\AppData\Local\Temp\playwright-java-3643724845023119710\package\lib\coreBundle.js:18775:44)
-}
-Call log:
--   - waiting for getByText(&quot;L&quot;, new Page.GetByTextOptions().setExact(true))
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:273)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:229)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:145)
-	... 33 more
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.flipkartTest#verifyHover</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.flipkartTest.verifyHover() on instance tests.flipkartTest@42e99e4a depends on not successfully finished methods 
-[tests.flipkartTest.verifySelectSize() on instance tests.flipkartTest@42e99e4a]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.flightTest#flightSearchTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.flipkartTest#verifyFilterOptions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.flipkartTest#verifyItemsLoadedAndList</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.flipkartTest#verifyOpen2ndProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">tests.flipkartTest#verifySearchProductTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">tests.flipkartTest#verifySearchWithSUggetsion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">tests.flightTest#flightSearchTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.flightTest#framesTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.flightTest#popUpTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
