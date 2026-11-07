@@ -25,9 +25,9 @@ public class flightTest extends BaseTest {
 	    flightPage.selectRoundTrip();
 	    flightPage.selectOrigin("Bengaluru");
 	    flightPage.selectDestination("Mumbai");
-	    flightPage.selectDepartureDate("September 2026","28");
+	    flightPage.selectDepartureDate("December 2026","28");
 	    page.waitForTimeout(2000);
-	    flightPage.selectReturnDate("September 2026","30");
+	    flightPage.selectReturnDate("December 2026","30");
 	    page.waitForTimeout(2000);
 	    flightPage.searchFlights();	  
 	}
